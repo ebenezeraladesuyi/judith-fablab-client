@@ -16,7 +16,7 @@ const Header2 = () => {
     <div className='w-full h-[70px] shadow-md flex justify-center items-center fixed z-30 bg-white font-pop'>
       <div className='w-[90%] h-full  flex justify-between items-center relative '>
         <div className='flex gap-10  items-center'>
-          <img src={fab} className='' alt='' />
+          <img src={fab} className='w-[50px]' alt='' />
 
           <div className='lg:flex gap-5 hidden'>
             <ol className='cursor-pointer hover:text-gray-700 font-bold'>
@@ -45,7 +45,8 @@ const Header2 = () => {
           <button className='rounded-[10px] m-2 bg-[#002e6c] text-white font-bold hover:border-[#002e6c] hover:border-[1px] border-none hover:bg-[#f5f8ff] hover:text-[#002e6c]'>
             Sign up
           </button>
-          <img src={alu} className=' py-3 lg:flex hidden' alt='' />
+
+          <img src={alu} className='w-[80px]' alt='' />
         </div>
 
         {show ? null : (

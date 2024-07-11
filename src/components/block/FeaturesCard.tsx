@@ -8,7 +8,7 @@ interface iFeature {
 
 const FeaturesCard: React.FC<iFeature> = ({ featureImg, title, details }) => {
   return (
-    <div className='w-full md:w-[45%] lg:w-[23.5%] h-[400px] p-[35px] py-[50px] bg-white flex flex-col items-center justify-between rounded-[10px] gap-4'>
+    <div className='w-full sm:w-[250px] md:w-[350px] lg:w-[300px] h-[400px] p-[35px] py-[20px] bg-[#F6FAFB]  flex flex-col items-center justify-between rounded-[10px] gap-4'>
       <div className='w-full h-[40%]'>
         <img className='w-full h-full' src={featureImg} alt='' />
       </div>

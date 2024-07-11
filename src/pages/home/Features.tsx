@@ -9,12 +9,12 @@ import "swiper/css";
 
 const Features = () => {
   return (
-    <div className='w-full flex flex-col justify-center items-center py-[100px] '>
+    <div className='w-full flex flex-col justify-center items-center py-[100px]'>
       <h1 className='text-center text-[16px] md:text-[22px] mt-[20px] text-[#057FAB]'>
         Our Features
       </h1>
 
-      <h2 className='text-center font-bold text-[23px] mt-[15px] md:text-[35px] lg:text-[50px]'>
+      <h2 className='text-center font-bold text-[23px] mt-[15px] md:text-[35px] lg:text-[50px] mb-[20px]'>
         Why You Should Choose FabLab
       </h2>
 
@@ -26,7 +26,7 @@ const Features = () => {
         autoplay={{ delay: 2000, disableOnInteraction: true }}
         loop={true}
         modules={[Autoplay]}
-        className='w-full overflow-hidden h-max '
+        className='w-[95%] overflow-hidden h-max  flex justify-center'
         breakpoints={{
           768: {
             spaceBetween: 30,

@@ -40,7 +40,7 @@ const Header2 = () => {
         </div>
 
         <div className='hidden lg:flex gap-4 '>
-          <NavLink to="/">
+          <NavLink to="/signin">
             <button className='rounded-[10px] border-[1px] border-[#ebf1ff] text-[#002e6c] bg-[#f5f8ff] hover:bg-[#002e6c] hover:text-white hover:border-none font-bold m-2'>
               Log in
             </button>
@@ -97,12 +97,17 @@ const Header2 = () => {
             Book A Mentor
           </ol>
 
-          <button className='rounded-[30px] border-[1px] border-[#ebf1ff] text-[#002e6c] bg-[#f5f8ff] hover:bg-[#002e6c] hover:text-white hover:border-none font-bold'>
-            Log in
-          </button>
-          <button className='rounded-[30px] bg-[#002e6c] text-white font-bold hover:border-[#002e6c] hover:border-[1px] border-none hover:bg-[#f5f8ff] hover:text-[#002e6c]'>
-            Sign up
-          </button>
+          <NavLink to="signin">
+            <button className='rounded-[30px] border-[1px] border-[#ebf1ff] text-[#002e6c] bg-[#f5f8ff] hover:bg-[#002e6c] hover:text-white hover:border-none font-bold'>
+              Log in
+            </button>
+          </NavLink>
+
+          <NavLink to="/signup">
+            <button className='rounded-[30px] bg-[#002e6c] text-white font-bold hover:border-[#002e6c] hover:border-[1px] border-none hover:bg-[#f5f8ff] hover:text-[#002e6c]'>
+              Sign up
+            </button>
+          </NavLink>
         </div>
       </div>
     </div>

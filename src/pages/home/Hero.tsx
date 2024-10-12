@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className='w-full min-h-[95vh] flex justify-center items-center bg-[#002250] '>
       <div className='w-[90%] flex flex-col md:flex-row md:justify-between items-center gap-4 mt-[50px]'>
-        <div className='w-full md:w-[40%] lg:w-[48%] rounded-[15px]  overflow-hidden'>
+        <div className='w-full md:w-[40%] lg:w-[48%] rounded-[15px] mt-[50px] md:mt-0 overflow-hidden'>
           <img className='w-full overflow-hidden' src={hero} alt='' />
         </div>
 

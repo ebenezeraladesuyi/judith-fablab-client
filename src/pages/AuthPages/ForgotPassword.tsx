@@ -1,10 +1,9 @@
 // import React from 'react'
 
-import { NavLink } from "react-router-dom"
 import alu from "../../assets/images/authImages/alu-white.png"
 import fab from "../../assets/images/authImages/fab-white.png"
 
-const SignUp = () => {
+const ForgotPassword = () => {
   return (
     <div className="w-full min-h-[100vh] flex ">
         <div className="hidden md:flex justify-center md:w-[45%] lg:w-[50%] bg-auth-bg bg-cover bg-center relative p-10">
@@ -18,31 +17,26 @@ const SignUp = () => {
           <div className="absolute bg-[#0000004f] w-full h-full top-0 left-0 md:hidden"></div>
 
           <h1 className="text-[17px] md:text-[22px] z-20 font-bold text-white md:text-blue-400">
-            Create an Account
+            Forgot Password
           </h1>
 
           <form className="w-[85%] md:w-[80%] lg:w-[60%] bg-[#ffffff54] md:bg-[#fff] p-5 md:p-7 rounded-[10px] z-20 shadow-md flex flex-col gap-3">
-            <input className="border-[1px] rounded-[6px] px-2 h-[40px] text-[13px] md:text-[16px] md:h-[50px] w-full" type="text" placeholder="Name" />
 
             <input className="border-[1px] rounded-[6px] px-2  h-[40px] text-[13px] md:text-[16px] md:h-[50px] w-full" type="email" placeholder="Email" />
 
-            <input className="border-[1px] rounded-[6px] px-2  h-[40px] text-[13px] md:text-[16px] md:h-[50px] w-full" type="password" placeholder="Password" />
-
-            <input className="border-[1px] rounded-[6px] px-2  h-[40px] text-[13px] md:text-[16px] md:h-[50px] w-full" type="password" placeholder="Confirm Password" />
-
             <button className="border-none  h-[38px] text-[14px] md:h-[47px] bg-blue-400 text-white font-bold">
-              Create
+              Continue
             </button>
 
-            <div className="flex justify-between">
+            {/* <div className="flex justify-between">
               <div></div>
 
-              <h2 className="text-[12px] md:text-[14px] lg:text-[16px] text-white md:text-[#000]">Already have an Account? <NavLink to="/signin"><span className="text-blue-400 font-bold cursor-pointer">Signin</span></NavLink></h2>
-            </div>
+              <h2 className="text-[12px] md:text-[14px] lg:text-[16px] text-white md:text-[#000]">Already have an Account? <span className="text-blue-400 font-bold cursor-pointer">Signin</span></h2>
+            </div> */}
           </form>
         </div>
     </div>
   )
 }
 
-export default SignUp
+export default ForgotPassword;

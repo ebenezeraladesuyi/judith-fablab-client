@@ -4,6 +4,7 @@ import { RiMenu4Fill } from "react-icons/ri";
 import { MdOutlineClose } from "react-icons/md";
 import fab from "../../assets/images/alu (2).jpg";
 import alu from "../../assets/images/fab.jpg";
+import { NavLink } from "react-router-dom";
 
 const Header2 = () => {
   const [show, setShow] = React.useState(false);
@@ -39,12 +40,17 @@ const Header2 = () => {
         </div>
 
         <div className='hidden lg:flex gap-4 '>
-          <button className='rounded-[10px] border-[1px] border-[#ebf1ff] text-[#002e6c] bg-[#f5f8ff] hover:bg-[#002e6c] hover:text-white hover:border-none font-bold m-2'>
-            Log in
-          </button>
-          <button className='rounded-[10px] m-2 bg-[#002e6c] text-white font-bold hover:border-[#002e6c] hover:border-[1px] border-none hover:bg-[#f5f8ff] hover:text-[#002e6c]'>
-            Sign up
-          </button>
+          <NavLink to="/">
+            <button className='rounded-[10px] border-[1px] border-[#ebf1ff] text-[#002e6c] bg-[#f5f8ff] hover:bg-[#002e6c] hover:text-white hover:border-none font-bold m-2'>
+              Log in
+            </button>
+          </NavLink>
+
+          <NavLink to="/signup">
+            <button className='rounded-[10px] m-2 bg-[#002e6c] text-white font-bold hover:border-[#002e6c] hover:border-[1px] border-none hover:bg-[#f5f8ff] hover:text-[#002e6c]'>
+              Sign up
+            </button>
+          </NavLink>
 
           <img src={alu} className='w-[80px]' alt='' />
         </div>

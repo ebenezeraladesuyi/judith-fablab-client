@@ -1,5 +1,5 @@
 // import React from 'react'
-import fab from "../../assets/images/alu (2).jpg";
+import fab from "../../assets/images/alu-png.png";
 
 const Footer = () => {
   return (

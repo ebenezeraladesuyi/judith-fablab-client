@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         pop: ["poppins", "san-serif"],
       },
+      backgroundImage: {
+        'auth-bg' : "url(/src/assets/images/authImages/auth-img.png)"
+      }
     },
   },
   plugins: [],

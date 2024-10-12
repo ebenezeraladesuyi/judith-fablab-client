@@ -1,18 +1,13 @@
 // import React from 'react'
 
 import { Outlet } from "react-router-dom"
-import { Footer, Header2 } from "../components"
 
-const HomeLayout = () => {
+const SignUpLayout = () => {
   return (
     <div className="font-pop">
-        <Header2 />
-
         <Outlet />
-
-        <Footer />
     </div>
   )
 }
 
-export default HomeLayout
+export default SignUpLayout

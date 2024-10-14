@@ -6,14 +6,15 @@ import SignUpLayout from "../layout/AuthLayout/SignUpLayout";
 import SigninLayout from "../layout/AuthLayout/SigninLayout";
 // import Signin from "../pages/AuthPages/Signin";
 import ForgotPasswordLayout from "../layout/AuthLayout/ForgotPasswordLayout";
-// import ForgotPassword from "../pages/AuthPages/ForgotPassword";
-// import SignUp from "../pages/AuthPages/SignUp";
+import PasswordResetLayout from "../layout/AuthLayout/PasswordResetLayout";
 
 
 const HomeComp = lazy (() => import("../pages/home/HomeComp"))
 const SignUp = lazy (() => import("../pages/AuthPages/SignUp"))
 const Signin = lazy (() => import("../pages/AuthPages/Signin"))
 const ForgotPassword = lazy (() => import("../pages/AuthPages/ForgotPassword"))
+const SignupVerify = lazy (() => import("../pages/AuthPages/SignupVerify"))
+const VerifyCodePasswordReset = lazy (() => import("../pages/AuthPages/VerifyCodePasswordReset"))
 
 
 
@@ -35,7 +36,11 @@ export const element = createBrowserRouter([
             {
                 index: true,
                 element: <SignUp />
-            }
+            },
+            {
+                path: "verifysignup",
+                element: <SignupVerify />
+            },
         ]
     },
     {
@@ -55,6 +60,16 @@ export const element = createBrowserRouter([
             {
                 index: true,
                 element: <ForgotPassword />
+            }
+        ]
+    },
+    {
+        path: "/passwordreset",
+        element: <PasswordResetLayout />,
+        children : [
+            {
+                index: true,
+                element: <VerifyCodePasswordReset />
             }
         ]
     },

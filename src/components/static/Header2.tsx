@@ -41,13 +41,13 @@ const Header2 = () => {
 
         <div className='hidden lg:flex gap-4 '>
           <NavLink to="/signin">
-            <button className='rounded-[10px] border-[1px] border-[#ebf1ff] text-[#002e6c] bg-[#f5f8ff] hover:bg-[#002e6c] hover:text-white hover:border-none font-bold m-2'>
+            <button className='rounded-[10px] border-[1px] border-[#ebf1ff] text-[#002e6c] bg-[#f5f8ff] hover:bg-[#002e6c] hover:text-white hover:border-none font-bold m-2 transition-all duration-600 ease-in-out'>
               Log in
             </button>
           </NavLink>
 
           <NavLink to="/signup">
-            <button className='rounded-[10px] m-2 bg-[#002e6c] text-white font-bold hover:border-[#002e6c] hover:border-[1px] border-none hover:bg-[#f5f8ff] hover:text-[#002e6c]'>
+            <button className='rounded-[10px] m-2 bg-[#002e6c] text-white font-bold hover:border-[#002e6c] hover:border-[1px] border-none hover:bg-[#f5f8ff] hover:text-[#002e6c] transition-all duration-600 ease-in-out'>
               Sign up
             </button>
           </NavLink>

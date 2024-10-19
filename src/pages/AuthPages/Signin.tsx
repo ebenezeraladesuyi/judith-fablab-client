@@ -37,8 +37,8 @@ const Signin = () => {
 
             <input className="border-[1px] rounded-[6px] px-2  h-[40px] text-[13px] md:text-[16px] md:h-[50px] w-full" type="email" placeholder="Email" />
 
-            <div className="w-full border-[1px] border-gray-300 rounded-[6px] px-2 h-[40px] md:h-[50px] flex justify-betweeen items-center">
-                <input className="border-none text-[13px] md:text-[16px] w-[95%] outline-none" type={ passwordShow ? "text" : "password"} placeholder="Enter Your Password" />
+            <div className="w-full border-[1px] border-gray-300 rounded-[6px] px-2 h-[40px] md:h-[50px] flex justify-betweeen items-center bg-white">
+                <input className="border-none text-[13px]  md:text-[16px] w-[95%] outline-none" type={ passwordShow ? "text" : "password"} placeholder="Enter Your Password" />
 
                 <div onClick={showPassword}>
                   { passwordShow ? 
@@ -53,7 +53,7 @@ const Signin = () => {
               <div></div>
 
               <NavLink to="/forgotpassword">
-                  <div className="text-[12px] md:text-[14px] lg:text-[16px] text-[#00285e] font-bold cursor-pointer">Forgot Password?</div>
+                  <div className="text-[12px] md:text-[14px] lg:text-[16px] text-[#bdbbbb] font-bold cursor-pointer">Forgot Password?</div>
               </NavLink>
             </div>
 
@@ -64,7 +64,7 @@ const Signin = () => {
             <div className="flex justify-between">
               <div></div>
 
-              <h2 className="text-[12px] md:text-[14px] lg:text-[16px] text-white md:text-[#000]">Don't have an Account? <NavLink to="/signup"><span className="text-[#00285e] font-bold cursor-pointer">Signup</span></NavLink></h2>
+              <h2 className="text-[12px] md:text-[14px] lg:text-[16px] text-white md:text-[#000]">Don't have an Account? <NavLink to="/signup"><span className="text-[#bdbbbb] font-bold cursor-pointer">Signup</span></NavLink></h2>
             </div>
           </form>
         </div>

@@ -1,6 +1,7 @@
 // import React from 'react'
 
 import { AiFillPlayCircle } from "react-icons/ai";
+// import vid from "../../assets/images/authImages/auth-img.png";
 
 const Action = () => {
   return (
@@ -21,9 +22,9 @@ const Action = () => {
         </div>
 
         <div className='w-full md:w-[48%] shadow-md relative'>
-          <img className='w-full' src='/vite.svg' />
+          <div className='w-full h-[300px] lg:h-[500px] bg-auth-bg bg-cover bg-center rounded-[15px]'> </div> 
 
-          <div className='absolute top-[40%] right-[40%] text-[60px] md:text-[100px] md:top-[37%] md:left-[37%] lg:text-[170px] text-[#002e6c] lg:top-[31%] lg:left-[33%]'>
+          <div className='absolute top-[40%] right-[40%] text-[60px] md:text-[100px] md:top-[37%] md:left-[37%] lg:text-[170px] text-[#002e6c text-white lg:top-[31%] lg:left-[33%]'>
             <AiFillPlayCircle />
           </div>
         </div>

@@ -31,3 +31,21 @@ export const signupUser = async (data: iUser)  => {
         throw error
     }
 }
+
+
+// sign up verification from user email
+export const verifyUser = async (token: string, uidb64: string) => {
+    try {
+        const response = await axios.get(`${url}/api/users/activate/${uidb64}/${token}/`);
+        
+        return response; // Return the response if verification is successful
+        console.log(response);
+    } catch (error) {
+        // Handle errors appropriately
+        if (axios.isAxiosError(error)) {
+            throw error.response?.data || 'Verification failed'; // Throw the error message from response or a default message
+        } else {
+            throw new Error('Verification failed'); // Handle unexpected errors
+        }
+    }
+};

@@ -15,6 +15,7 @@ const Signin = lazy (() => import("../pages/AuthPages/Signin"))
 const ForgotPassword = lazy (() => import("../pages/AuthPages/ForgotPassword"))
 const SignupVerify = lazy (() => import("../pages/AuthPages/SignupVerify"))
 const VerifyCodePasswordReset = lazy (() => import("../pages/AuthPages/VerifyCodePasswordReset"))
+const Verify = lazy (() => import("../pages/AuthPages/Verify"))
 
 
 
@@ -40,6 +41,10 @@ export const element = createBrowserRouter([
             {
                 path: "verifysignup",
                 element: <SignupVerify />
+            },
+            {
+                path: "verified/:uidb64/:token",
+                element: <Verify />
             },
         ]
     },
